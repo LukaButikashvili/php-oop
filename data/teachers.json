@@ -1,27 +1,29 @@
-[
-    {
-        "name": "Meri",
-        "surname": "Bukhnikashvili",
-        "avatar": "https://sdad"
-    },
-    {
-        "name": "Amiran",
-        "surname": "Amiranashvili",
-        "avatar": "https://sdad"
-    },
-    {
-        "name": "Gogi",
-        "surname": "Gogiashvili",
-        "avatar": "https://sdad"
-    },
-    {
-        "name": "Zauri",
-        "surname": "Gamsaxurdia",
-        "avatar": "https://sdad"
-    },
-    {
-        "name": "Giorgi",
-        "surname": "Gabunia",
-        "avatar": "https://sdad"
-    }
-]
+{
+    "teachers":[
+        {
+            "name": "Meri",
+            "surname": "Bukhnikashvili",
+            "id": 1
+        },
+        {
+            "name": "Amiran",
+            "surname": "Amiranashvili",
+            "id": 2
+        },
+        {
+            "name": "Gogi",
+            "surname": "Gogiashvili",
+            "id": 3
+        },
+        {
+            "name": "Zauri",
+            "surname": "Gamsaxurdia",
+            "id": 4
+        },
+        {
+            "name": "Giorgi",
+            "surname": "Gabunia",
+            "id": 5
+        }
+    ]
+}

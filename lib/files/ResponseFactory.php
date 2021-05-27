@@ -2,12 +2,12 @@
 
 class ResponseFactory {
 
-    public static function createResponse(string $dataName) {
+    public static function createResponse(array $data) {
         
         $accept = self::readConfigFormat();
         $format = explode('/', $accept)[1];
 
-        $data = self::returnDataInArrayFormat($dataName);
+        //$data = self::returnDataInArrayFormat($dataName);
 
         $requestClasses = [
             'html' => 'ResponseTxt',
@@ -33,16 +33,16 @@ class ResponseFactory {
     }
 
     public static function readConfigFormat() {
-        $config = json_decode(file_get_contents('config/config.json'), true);
+        $config = json_decode(file_get_contents('core/config/config.json'), true);
 
         return $config['content']['type'];
     }
 
-    public static function returnDataInArrayFormat(string $dataName) {
-        $DATA_PATH = "data/";
-        $fetchData = json_decode(file_get_contents($DATA_PATH . $dataName . ".json"), true);
+    // public static function returnDataInArrayFormat(string $dataName) {
+    //     $DATA_PATH = "data/";
+    //     $fetchData = json_decode(file_get_contents($DATA_PATH . $dataName . ".json"), true);
 
-        return $fetchData;
-    }
+    //     return $fetchData;
+    // }
 
 }

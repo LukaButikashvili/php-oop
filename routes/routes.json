@@ -1,0 +1,4 @@
+{
+    "/teachers/:id": "get_data",
+    "/students/:id": "get_data"
+}
